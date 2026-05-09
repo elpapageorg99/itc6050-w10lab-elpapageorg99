@@ -2,7 +2,8 @@ import dlt
 import requests
 
 @dlt.resource(write_disposition="replace")
-def github_issues(repo: str = "dlt-hub/dlt"):
+#def github_issues(repo: str = "dlt-hub/dlt"):
+def github_issues(repo: str = "apache/superset"):
     """Yield recent GitHub issues for a public repo."""
     url = f"https://api.github.com/repos/{repo}/issues"
     params = {"state": "all", "per_page": 100, "page": 1}
