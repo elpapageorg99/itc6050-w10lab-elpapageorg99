@@ -11,3 +11,7 @@ Database loading — wrote the data directly to Postgres without us writing a si
 dlt handled JSON arrays (like labels) by storing them as JSONB columns in Postgres, preserving the nested structure without flattening it manually.
 
 We built stg_github_issues as a separate model first so that multiple analysts can build different summaries on top of the same clean, consistent base layer — instead of each one writing their own version of the same cleanup logic.
+
+## Dashboard Screenshot
+
+![Dashboard](dashboard_screenshot.png)
