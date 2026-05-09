@@ -1,1 +1,2 @@
 " ITC 6050 - Week 1 Lab" 
+We run Postgres in Docker instead of installing it directly because Docker containers are portable, isolated, and reproducible — ensuring the same environment works identically on every machine without conflicts with local system settings.
